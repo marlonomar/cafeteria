@@ -1,0 +1,344 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans";
+	font-size:16px;
+}
+
+.contenedor{
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+
+/*--------------HEADER----------------*/
+
+header{
+	width:100%;
+	background: url('../img/bg.jpg')#281a0c;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center 0;
+}
+
+header .contenedor{
+	position:relative;
+	height:500px;
+}
+
+header .menu{
+	width:100%;
+	text-align:right;
+}
+
+header .menu a{
+	color:#fff;
+	font-size:20px;
+	font-weight:300;
+	display:inline-block;
+	margin:40px 20px;
+	text-decoration:none;
+	position:relative;
+}
+
+header .menu a:hover{
+	text-decoration:underline;
+}
+
+header .textos{
+	width:100%;
+	color:#fff;
+	position:absolute;
+	top:20%;
+	margin-top:-52px;
+}
+
+header .textos .nombre{
+	font-size: 50px;
+	font-weight: 600;
+}
+
+header .textos .nombre span{
+	font-weight:300;}
+
+header .textos h3{
+	font-weight:200;
+	font-size:20px;
+	font-style: italic;
+}
+
+
+/*-----------MAIN------------*/
+
+.main{
+	background: url('../img/textura.png');
+}
+
+.main .acerca-de .contenedor{
+	overflow:visible;
+	position:relative;
+}
+
+.main .acerca-de .foto{
+	width:80%;
+	position:absolute;
+	left:0;
+	top:-50px;
+	z-index:0;
+	box-shadow:0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .acerca-de .foto img{
+	vertical-align: top;
+	width:100%;
+}
+
+.main .acerca-de article{
+	background:#fff;
+	width:50%;
+	position: relative;
+	padding:40px;
+	top:50px;
+	z-index: 1;
+	box-shadow:0px 0px 15px rgba(0,0,0,.35);
+	float:right;
+}
+
+.main .acerca-de article h3{
+	font-size: 30px;
+	font-weight: 200px;
+	margin-bottom:40px;
+}
+
+/*-------------MENU---------------*/
+
+.main .menu{
+	padding-top:570px;
+	margin-top:70px;
+}
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2{
+	border: 1px solid #000;
+	background:transparent;
+	padding:10px;
+	overflow:hidden;
+}
+
+.main .menu .titulo{
+	font-size:40px;
+	font-weight:300;
+	margin-bottom:40px;
+	text-align:center;
+}
+
+.main .menu article{
+	width:50%;
+	float:left;
+	padding:20px;
+}
+
+.main .menu .categoria{
+	font-size:22px;
+	font-weight:500;
+	margin-bottom:40px;
+	text-align:center;
+}
+
+.main .menu .platillo{
+	margin-bottom:30px;
+	padding-bottom:20px;
+	border-bottom: 4px dotted;
+	overflow:hidden;
+}
+
+.main .menu .nombre{
+	font-size:20px;
+	margin-bottom:15px;
+	float:left;
+}
+
+.main .menu .precio{
+	font-size:20px;
+	margin-bottom:15px;
+	float:right;
+}
+
+.main .menu .descripcion{
+	font-size:16px;
+	color:#676767;
+	clear: both;
+}
+
+/*--------------GALERIA---------------------*/
+
+.main .galeria{
+	overflow:hidden;
+	padding-top:40px;
+}
+
+.main .galeria .foto{
+	width:25%;
+	float:left;
+}
+
+.main .galeria .foto img{
+	width:100%;
+	opacity:.7;
+	vertical-align:top;
+}
+
+.main .galeria .foto:hover img{
+	opacity:1;
+	transition: all .3s ease;
+}
+
+/*------------------Ubicacion--------------------*/
+
+.main .ubicacion{
+	background:#fff;
+	padding: 60px 0px;
+	overflow: hidden;
+}
+
+.main .ubicacion .titulo{
+	text-align: center;
+	font-size:40px;
+	line-height: 40px;
+	font-weight: 300;
+	margin-bottom:40px;
+}
+
+.main .ubicacion .direccion{
+	float:left;
+	width:50%;
+	text-align: left;
+}
+
+.main .ubicacion .horario{
+	float:right;
+	width:50%;
+	text-align:right;
+	overflow: hidden;
+}
+
+.main .ubicacion .direccion .calle{
+	margin-bottom: 15px;
+}
+
+.main .ubicacion .horario h4{
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.main .ubicacion .horario .entre-semana,
+.main .ubicacion .horario .fin-de-semana{
+	width:50%;
+	float:left;
+	text-align: center;
+}
+
+.main .mapa{
+	width:100%;
+	overflow:hidden;
+}
+
+.main .mapa iframe{
+	width:100%;
+	max-height: 600px;
+}
+
+/*----------------FOOTER-----------------*/
+
+footer{
+	background:#000;
+}
+
+.footer{
+	text-align: center;
+	padding: 15px 0px;
+	color: #fff;
+
+}
+
+/*----------------MEDIA QUERIES-------------------*/
+
+@media screen and (max-width: 800px){
+	header .contenedor{
+		position: static;
+		height: auto;
+	}
+
+	header .textos{
+		position: static;
+		margin: 100px 0px;
+	}
+
+	header .menu{
+		text-align: center;
+	}
+
+	header .menu a{
+		margin: 10px 20px;
+	}
+
+	header .textos .nombre{
+		font-size: 30px;
+	}
+
+	header .textos h3{
+		font-size: 18px;
+	}
+
+	.main .acerca-de .foto{
+		width:100%;
+		position: relative;
+	}
+	.main .acerca-de article{
+		position: relative;
+		width: 100%;
+		top: -50px;
+		transform: translate(0px,0);
+	}
+	.main .menu{
+		padding-top: 200px;
+	}
+	.main .menu article{
+		width:100%;
+	}
+	.main .galeria .foto{
+		width:50%;
+	}
+	.main .mapa{
+		width:80%;
+		margin:auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.main .acerca-de article h3{
+		font-size: 34px;
+		margin-bottom:10px;
+	}
+	.main .menu article .nombre,
+	.main .menu article .nombre{
+		font-size: 16px;
+		line-height:16px;
+	}
+	.main .ubicacion .direccion{
+		width:100%;
+		text-align:center;
+		margin-bottom: 15px;
+	}
+	.main .ubicacion .horario{
+		width:100%;
+		text-align:center;
+	}
+}
