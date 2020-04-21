@@ -279,6 +279,7 @@ footer{
 	header .textos{
 		position: static;
 		margin: 100px 0px;
+		width: 44%;
 	}
 
 	header .menu{
